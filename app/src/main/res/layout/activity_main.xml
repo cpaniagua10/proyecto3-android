@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        />
+    <TextView
+        android:id="@+id/text_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/image_view"
+        android:textSize="20dp"
+        android:maxLines="10"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/capture_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detect_text_image_btn"
+        android:backgroundTint="#3F51B5"
+        android:textColor="@color/white"
+        android:text="Capture Image"
+        android:textAllCaps="false"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/detect_text_image_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_to_speech_btn"
+        android:backgroundTint="#FF5722"
+        android:text="Detect text"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/text_to_speech_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:backgroundTint="#8BC34A"
+        android:enabled="false"
+        android:text="Read it out loud!"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="17dp" />
+
+
+
+
+</RelativeLayout>
